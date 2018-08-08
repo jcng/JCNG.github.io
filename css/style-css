@@ -1,0 +1,104 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  background-color: #efefef;
+}
+
+p {
+  color: #585858;
+}
+
+h1, h2 {
+  color: #252525;
+}
+
+.basicText {
+  color: #585858;
+}
+
+.subText {
+  color: #585858;
+  font-size: 0.8em;
+}
+
+.flexImage {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+#mainContent {
+  margin: auto;
+  width: 740px;
+}
+
+.headerContent {
+  padding: 15px;
+  display: flex;
+}
+.headerContent h1, .headerContent h2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  margin: 0;
+}
+.headerContent .headerInfo {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.85em;
+}
+.headerContent #profilePicture {
+  width: 150px;
+  border-radius: 50%;
+  border: 1px #585858 solid;
+  margin-right: 20px;
+}
+
+#detailCardContainer {
+  padding: 5px 0 5px 0;
+}
+#detailCardContainer .detailCard {
+  background-color: #ffffff;
+  padding: 10px;
+  margin: 20px 0 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 1px 5px #777777;
+}
+#detailCardContainer .detailCard h2 {
+  margin-bottom: 0.2em;
+}
+#detailCardContainer .detailCard h3 {
+  font-weight: normal;
+  color: #252525;
+  margin-bottom: 0;
+}
+#detailCardContainer #skillsCard li {
+  list-style-type: none;
+  color: #585858;
+}
+
+.detailBoxWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.detailBox {
+  margin: 0 20px 0 20px;
+}
+.detailBox h3 {
+  margin: 0;
+}
+
+@media screen and (max-width: 1000px) {
+  #mainContent {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 850px) {
+  .detailBoxWrapper {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}
+
+/*# sourceMappingURL=style-css.map */
