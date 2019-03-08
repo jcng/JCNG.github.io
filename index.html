@@ -1,140 +1,160 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Joshua Ng | Front End Development</title>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
 
-        <!-- favicon -->
-        <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
-        <link rel="manifest" href="./images/favicon/site.webmanifest">
-        <link rel="mask-icon" href="./images/favicon/safari-pinned-tab.svg" color="#5bbad5">
-        <meta name="msapplication-TileColor" content="#da532c">
-        <meta name="theme-color" content="#ffffff">
-        <!-- /favicon -->
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Joshua Ng | Front End Development</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Font Awesome -->
-        <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
-            crossorigin="anonymous"></script>
-        <!-- /Font Awesome -->
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- /Favicon -->
 
-        <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Oswald:400,500" rel="stylesheet">
-        <!-- /Google Fonts-->
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Noto+Serif+SC|Aleo" rel="stylesheet">
+    <!-- /Google Fonts -->
 
-        <!-- Meta Tags -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-        <meta charset="UTF-8">
-        <meta http-equiv="X-U-A-Compatible" content="ie=edge">
-        <!-- /Meta Tags -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <!-- /Font Awesome -->
 
-    </head>
-    <body>
-        <!-- <div style="width: 100%; text-align: center; background-color: yellow; font-weight: bold; margin-top: 15px; margin-bottom: 15px;">UNDER CONSTRUCTION</div> -->
-        <div id="navBar">
-            <div id="navInnerWrapper">
-                <ul class="navList">
-                    <li class="navItems navActive"><a href="#">About</a></li>
-                    <li class="navItems"><a href="/blog">Blog</a></li>
-                </ul>
+    <!-- Meta Tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-U-A-Compatible" content="ie=edge">
+    <!-- /Meta Tags -->
+
+
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <header class="cover">
+        <div class="cover-text">
+            <h1 class="cover__heading">Let's make the web beautiful.</h1>
+            <p class="cover__details">
+                Beauty should come from the inside out. A page that looks nice but performs poorly is like serving
+                frosting without a cake.
+            </p>
+        </div> <!-- /.cover-text -->
+        <img id="cake-image" src="/images/cake.png" />
+        <a href="#about-me">
+            <div class="cover-more">
+                <div>More</div>
+                <i class="fas fa-angle-down"></i>
+            </div>
+        </a>
+    </header> <!-- /.cover -->
+
+    <section id="about-me" class="section">
+        <h2 class="section__heading">Who I Am</h2>
+        <div class="section__contents">
+            <img class="profile-picture" src="/images/2018headshot-resize.jpg" />
+            <div class="section__details">
+                Hi, I'm <strong>Joshua Ng</strong>! I'm primarily a <strong>front-end developer</strong>. In 2017 I
+                graduated from UC Irvine with a Bachelor of Science in Informatics, and a specialization in Human
+                Computer Interaction. I studied the way people use computer interfaces, and how we can better design
+                those interfaces to be intuitive and flexible. Since graduating, I've shifted my focus to the
+                development side of websites and single-page applications, but I've carried over my human-centered
+                approach to design.
             </div>
         </div>
-        <div id="mainContent">
-            <div id="headerWrapper">
-                <div class="headerContent">
-                    <div class="flexImage">
-                        <img id="profilePicture" src="./images/2018headshot-resize.jpg" alt="Joshua Ng Picture"/>
+    </section>
+
+    <section id="skills">
+        <h2 class="section__heading">What I Use</h2>
+        <div class="section__contents">
+            <div class="section__details">
+                There are a lot of langauges and technologies that I've used over the past few years, but these are the
+                ones I'm most comfortable with and find myself using the most often:
+            </div>
+            <div class="icon-box">
+                <div class="icon-box__row">
+                    <div class="icon-wrapper">
+                        <i class="fab fa-html5 fa-7x"></i>
+                        <div class="icon-caption">HTML5</div>
                     </div>
-                    <div id="headerDetails">
-                        <h1>Joshua Ng</h1>
-                        <h2>Front End Developer</h2>
-                        <div class="headerInfo">
-                            <p>Recent graduate from UC Irvine with a BS in Informatics and 
-                                specialization in human-computer interaction.</p>
-                        </div>
+                    <div class="icon-wrapper">
+                        <i class="fab fa-css3-alt fa-7x"></i>
+                        <div class="icon-caption">CSS3</div>
                     </div>
-                    <div id="contactDetails">
-                        <h2>Contact</h2>
-                        <div class="headerInfo">
-                            <ul>
-                                <li><a href="mailto:joshuang.contact@gmail.com" target="_blank">
-                                    <span class="fas fa-envelope"></span>&nbsp;joshuang.contact@gmail.com
-                                </a></li>
-                                <li><a href="https://www.linkedin.com/in/joshua-ng-dev/" target="_blank">
-                                    <span class="fab fa-linkedin"></span>&nbsp;joshua-ng-dev
-                                </a></li>
-                            </ul>
-                        </div>
-
+                </div>
+                <div class="icon-box__row">
+                    <div class="icon-wrapper">
+                        <i class="fab fa-js-square fa-7x"></i>
+                        <div class="icon-caption">JavaScript (ES6)</div>
                     </div>
-                </div> <!-- End .headerContent -->
-            </div> <!-- End #headerWrapper -->
-
-            <div id="detailCardContainer">
-                <div class="detailCard detailCardTop" id="educationCard">
-                    <h2><span class="fas fa-graduation-cap"></span>&nbsp;Education</h2>
-                    <div class="detailBox">                        
-                        <h3>Univeristy of California, Irvine</h3>
-                        <span class="basicText">Bachelor of Science, Informatics</span><br/>
-                        <span class="basicText">2013-2017</span><br/>
-                        <span class="basicText">Human-Computer Interaction Specialization</span><br/>
-                    </div> <!-- End .detailBox -->
-                </div> <!-- End #educationCard -->
-                <div class="detailCard" id="skillsCard">
-                    <h2><span class="fas fa-wrench"></span>&nbsp;Skills</h2>
-                    <div class="detailBoxWrapper">
-                        <div class="detailBox">
-                            <h3>Web Languages</h3>
-                            <ul>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>JavaScript</li>
-                                <li>PHP</li>
-                                <li>SQL</li>
-                            </ul>
-                        </div>
-
-                        <div class="detailBox">
-                            <h3>Tools/Technologies</h3>
-                            <ul>
-                                <li>MySQL</li>
-                                <li>jQuery</li>
-                                <li>Adobe Photoshop</li>
-                                <li>Drupal 6 &amp; 7</li>
-                            </ul>
-                        </div>
-
-                        <div class="detailBox">
-                            <h3>General Programming</h3>
-                            <ul>
-                                <li>Python</li>
-                                <li>C++</li>
-                                <li>Java</li>
-                            </ul>
-                        </div>
-                    </div> <!--End .detailBoxWrapper-->
-                </div> <!-- End #skillsCard -->
-
-                <div class="detailCard" id="experienceCard">
-                    <h2><span class="fas fa-briefcase"></span>&nbsp;Experience</h2>
-                    <div class="detailBox">
-                        <h3>Trinet Internet Solutions, Inc.</h3>
-                        <span class="basicText">Intern Web Programmer</span><br/>
-                        <span class="basicText">July 2017 - Present</span></br/>
-                    </div> <!-- End .detailBox-->
-                </div> <!-- End #experienceCard -->
-            </div> <!-- End #detailCardContainer"-->
-        </div> <!-- End #mainContent-->
-    </body>
-
-    <footer>
-        <div id="footerContent">
-            Joshua Ng<br/>
-            <a href="mailto:joshuang.contact@gmail.com">Email</a> | <a href="https://www.linkedin.com/in/joshua-ng-dev/">LinkedIn</a>
+                    <div class="icon-wrapper">
+                        <i class="fab fa-react fa-7x"></i>
+                        <div class="icon-caption">React</div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </footer>
+    </section>
 
-    <script src="./js/nav-animations.js"></script>
+    <section id="portfolio">
+        <h2 class="section__heading">What I Do</h2>
+        <div class="section__contents">
+            <div class="section__details">
+                I am currently an intern web programmer at a web agency called <a
+                    href="https://www.trinetsolutions.com/" target="_blank">Trinet Internet Solutions</a>, where I work
+                on creating sites for clients on the Drupal CMS platform. In my free time I work on my own projects,
+                sometimes to facilitate learning a new technology, and sometimes just to solve a problem for myself.
+                Take a look at some of them showcased here, or check out <a href="https://github.com/jcng"
+                    target="_blank"> my GitHub</a>.
+            </div>
+            <div class="thumbnail-box">
+                <div class="project">
+                    <a href="https://jcng.github.io/lightning-palette/">
+                        <img src="/images/lightning-palette-thumb.jpg" class="project-thumbnail" />
+                    </a>
+                    <div class="project__caption"><a href="https://jcng.github.io/lightning-palette/">Lightning
+                            Palette</a></div>
+                </div>
+                <div class="project">
+                    <a href="https://jcng.github.io/531-planner/">
+                        <img src="/images/531-planner-thumb.jpg" class="project-thumbnail" />
+                    </a>
+                    <div class="project__caption"><a href="https://jcng.github.io/531-planner/">5/3/1 Workout
+                            Planner</a></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="section__highlight">
+            <h2 class="section__heading">Like what you see?</h2>
+            <div class="section__contents">
+                <div class="section__details">
+                    <strong>Get in touch with me or learn more!</strong>
+                    <ul>
+                        <li>
+                            <a href="mailto:joshuang.contact@gmail.com"><i
+                                    class="fas fa-envelope"></i>&nbsp;joshuang.contact@gmail.com</a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/joshua-ng-dev/"><i
+                                    class="fab fa-linkedin"></i>&nbsp;LinkedIn</a>
+                        </li>
+                        <li>
+                            <a href="https://jcng.github.io/blog/"><i class="fas fa-pencil-alt"></i>&nbsp;Dev Blog</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
 </html>
