@@ -162,6 +162,9 @@ section{
 #about-me .section__contents {
   display: flex;
 }
+#about-me .section__details {
+  width: 100%;
+}
 #skills .section__contents {
   text-align: center;
   width: 50%;
